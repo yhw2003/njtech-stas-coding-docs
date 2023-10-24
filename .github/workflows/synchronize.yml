@@ -1,0 +1,22 @@
+name: synchronize
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: synchronize
+        run: |
+          git clone --depth 1 https://github.com/MR-Addict/Doc-Share.git
+          rm -rf 电子组 && mkdir -p 电子组 && mv Doc-Share/src/* 电子组 && rm -rf Doc-Share
+          git config --global user.name "MR-Addict"
+          git config --global user.email "MR-Addict@qq.com"
+          git add . && git commit -m "ci: synchronize" && git push origin main
