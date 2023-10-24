@@ -1,1 +1,0 @@
-# njtech-stas-coding-docs
