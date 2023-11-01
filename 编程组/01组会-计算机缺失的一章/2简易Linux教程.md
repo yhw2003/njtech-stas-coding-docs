@@ -2,7 +2,7 @@
 title: 逃不开的一节-Linux
 description: 
 published: true
-date: 2023-11-01T14:35:52.478Z
+date: 2023-11-01T14:39:59.207Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-01T14:14:44.180Z
@@ -25,9 +25,10 @@ shell是一套基于文本的与操作系统交互的逻辑。
 echo "Hello World"
 ```
 - 常用的指令
-	- ls
+	- ls 
   - cd 
   - touch
+  - rm
   - mkdir
   - echo
   - cat
@@ -42,4 +43,9 @@ ls
 ls -a
 ls -l
 ```
-  
+
+#### 管道
+你可以重定向标准输出到文件
+``` shell
+echo "Hello World" >> log.txt
+```
