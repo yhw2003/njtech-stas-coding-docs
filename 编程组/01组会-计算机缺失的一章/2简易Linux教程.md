@@ -2,7 +2,7 @@
 title: 逃不开的一节-Linux
 description: 
 published: true
-date: 2023-11-01T14:44:59.206Z
+date: 2023-11-01T14:57:53.065Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-01T14:14:44.180Z
@@ -52,4 +52,21 @@ echo "Hello World" >> log.txt
 你还可以把文件描述符重定向到标准输入
 ```shell
 cat < a.txt
+```
+你还可以区分报错和普通信息
+```shell
+gcc file_not_exist.c 2>/dev/zero 1>/dev/stdout
+```
+你还可以把一个程序的输出输入给另一个程序
+```shell
+ls | cat
+```
+也可以不是文件
+```shell
+dd if=/dev/sda | pv | dd of=/dev/sdb
+```
+## Editors(VIM)
+vim是一个命令行下的文本编辑器
+```shell
+vim filename
 ```
