@@ -2,7 +2,7 @@
 title: 逃不开的一节-Linux
 description: 
 published: true
-date: 2023-11-01T14:39:59.207Z
+date: 2023-11-01T14:44:59.206Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-01T14:14:44.180Z
@@ -46,6 +46,10 @@ ls -l
 
 #### 管道
 你可以重定向标准输出到文件
-``` shell
+```shell
 echo "Hello World" >> log.txt
+```
+你还可以把文件描述符重定向到标准输入
+```shell
+cat < a.txt
 ```
