@@ -2,7 +2,7 @@
 title: 逃不开的一节-Linux
 description: 
 published: true
-date: 2023-11-01T14:31:58.898Z
+date: 2023-11-01T14:35:52.478Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-01T14:14:44.180Z
@@ -21,8 +21,25 @@ shell是一套基于文本的与操作系统交互的逻辑。
 - IDE封装的太多内容，使得你无法真正的理解编程。
 ---
 - shell的核心功能就是执行程序。
-``` shell
-ehoo "Hello World"
+```shell
+echo "Hello World"
 ```
-
+- 常用的指令
+	- ls
+  - cd 
+  - touch
+  - mkdir
+  - echo
+  - cat
+  - nano
+  - vim
+  - wget
+  - curl
+  
+- 你可以给命令附加参数
+```shell
+ls
+ls -a
+ls -l
+```
   
