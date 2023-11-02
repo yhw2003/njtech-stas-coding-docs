@@ -1,8 +1,8 @@
 ---
-title: 逃不开的一节-Linux
+title: 2逃不开的一节-Linux
 description: 
 published: true
-date: 2023-11-01T15:22:24.179Z
+date: 2023-11-02T13:14:51.623Z
 tags: 
 editor: markdown
 dateCreated: 2023-11-01T14:14:44.180Z
